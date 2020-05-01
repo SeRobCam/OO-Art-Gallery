@@ -18,6 +18,7 @@ class Painting
     @@all 
   end
 
+  #Returns an `integer` that is the total price of all paintings
   def self.total_price 
     self.all.map { |paint| paint.price }.sum
   end
